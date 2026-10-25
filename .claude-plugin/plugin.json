@@ -1,0 +1,10 @@
+{
+  "name": "usage-limits",
+  "version": "0.1.0",
+  "description": "Shows your 5-hour session and weekly usage limits, with reset times, above the chat box",
+  "types": "./types/index.d.ts",
+  "license": "MIT",
+  "author": {
+    "name": "Mahesh"
+  }
+}
