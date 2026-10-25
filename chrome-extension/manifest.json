@@ -1,0 +1,9 @@
+{
+  "manifest_version": 3,
+  "name": "Claude Usage Limits",
+  "version": "1.0.0",
+  "description": "Shows your Claude 5-hour session and weekly usage limits, with reset times, above the chat box on claude.ai.",
+  "content_scripts": [
+    { "matches": ["https://claude.ai/*"], "js": ["content.js"], "css": ["content.css"], "run_at": "document_idle" }
+  ]
+}

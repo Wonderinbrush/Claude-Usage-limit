@@ -25,3 +25,17 @@ Without GitHub, from a shell on your computer, using this folder directly:
 claude plugin marketplace add /path/to/usage-limits
 claude plugin install usage-limits@usage-limits
 ```
+
+## Chrome extension for claude.ai (regular chats)
+
+Plugins can't run in regular claude.ai chats, so `chrome-extension/` puts the same meter above the chat box there.
+It reads your own usage from claude.ai with your own login and sends nothing anywhere else.
+
+Install (Chrome, Edge, Brave):
+1. On this repository page: **Code → Download ZIP**, then unzip it.
+2. Open `chrome://extensions` and turn on **Developer mode** (top right).
+3. Click **Load unpacked** and pick the `chrome-extension` folder.
+4. Reload claude.ai. The bar appears above the chat box; **Less** shrinks it to the session row.
+
+Times show in your computer's time zone. It uses claude.ai's internal usage endpoint, which Anthropic doesn't
+document; if claude.ai changes it, the bar shows "Usage limits unavailable" until the extension is updated.
